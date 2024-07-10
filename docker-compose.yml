@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./
+    depends_on:
+      - phpmyadmin
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 80:80
+
+  mysql:
+    image: mysql:9.0.0
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    restart : always
+  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    
+    restart: always 
+    depends_on:
+      - mysql
+    ports:
+      - 8080:80
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - PMA_HOST=mysql
+      - PMA_PORT=3306
+
+
+volumes:
+  mysql-data:
