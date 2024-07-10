@@ -8,9 +8,9 @@ services:
     volumes:
       - ./src:/var/www/html
     environment:
-      - ${DB_HOST}
-      - ${DB_USER}
-      - ${DB_PASS}
+      - DB_HOST=${DB_HOST}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
     ports:
       - 80:80
 
