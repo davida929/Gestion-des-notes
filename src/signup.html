@@ -10,10 +10,11 @@
   <body class="container bg-green-300 grid place-items-center min-h-screen">
     <div class="bg-white p-5 py-6 min-w-80">
       <h1 class="text-xl text-green-500 text-center">Inscription</h1>
-      <form action="#" method="post">
+      <form action="#" method="post" enctype="multipart/form-data">
         <div class="block mt-6">
           <h3 class="font-bold mb-2">Information Personnel</h3>
 
+          <!-- Nom et Prenom -->
           <div class="flex gap-x-4">
             <div class="flex flex-col">
               <label for="nom" class="pb-1">Nom</label>
@@ -37,17 +38,19 @@
               />
             </div>
           </div>
+          <!-- Genre et Date de Naissance -->
           <div class="flex gap-x-4 mt-4">
             <div class="flex flex-col">
-              <label for="tel" class="pb-1">Télephone</label>
-              <input
-                type="text"
-                class="border px-2 py-1"
-                placeholder="034 xx  xxxx xx"
-                name="tel"
-                id="tel"
+              <label for="genre" class="pb-1">Genre</label>
+              <select
+                class="border px-2 py-1 min-w-56"
+                name="genre"
+                id="genre"
                 required
-              />
+              >
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+              </select>
             </div>
             <div class="flex flex-col">
               <label for="date" class="pb-1">Date de Naissance</label>
@@ -57,6 +60,32 @@
                 placeholder="Votre prénom"
                 name="dateDeNaissance"
                 id="date"
+              />
+            </div>
+          </div>
+
+          <!-- Photo de profile -->
+          <div class="flex gap-x-4 mt-4">
+            <div class="flex flex-col">
+              <label for="photo" class="pb-1">Photo d'Identité</label>
+              <input
+                type="file"
+                class="border px-2 py-1 max-w-56"
+                placeholder="034 xx  xxxx xx"
+                name="Photo"
+                id="photo"
+                required
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="tel" class="pb-1">Télephone</label>
+              <input
+                type="text"
+                class="border px-2 py-1"
+                placeholder="034 xx  xxxx xx"
+                name="tel"
+                id="tel"
+                required
               />
             </div>
           </div>
