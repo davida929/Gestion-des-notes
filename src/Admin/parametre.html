@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Acceuil</title>
+  </head>
+  <body class="flex min-h-screen bg-gray-100 flex">
+    <!-- <nav class="min-h-screen bg-white p-4">
+      <div class="mb-6">
+        <h1 class="text-2xl">Davida Berto</h1>
+      </div>
+
+    </nav> -->
+    <main class="min-h-screen w-full mb-16">
+      <!-- Header -->
+      <div
+        class="header p-4 px-8 bg-white border fixed w-full flex justify-between items-center"
+      >
+        <!-- Navigation  -->
+        <ul class="Navigation flex gap-x-4 items-center">
+          <li>
+            <a href="dashboard.html" class="hover:text-blue-500">Acceuil</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-blue-500">Contact</a>
+          </li>
+          <li>
+            <a href="parametre.html" class="text-blue-500">Parametre</a>
+          </li>
+        </ul>
+
+        <!-- End Button -->
+        <div>
+          <span class="username">Bertho</span>
+          <a
+            href="../adminLogin.html"
+            class="ml-2 py-2 px-4 bg-slate-100 hover:bg-red-200"
+          >
+            Deconnexion
+          </a>
+        </div>
+      </div>
+
+      <!-- Main -->
+
+      <div class="mt-12 p-4 bg-white">
+        <h1 class="text-2xl">Account Settings</h1>
+
+        <!-- Form  -->
+        <form action="#" class="mt-8 pl-4 w-fit">
+          <!-- User name -->
+          <div class="username flex flex-col">
+            <label for="username" class="font-bold">Username </label>
+            <input
+              type="text"
+              value="admin"
+              name="username"
+              id="username"
+              class="bg-slate-100 p-2"
+            />
+          </div>
+
+          <!-- Ancien Password -->
+          <div class="username flex flex-col">
+            <label for="username" class="font-bold">Ancien Mot de Passe </label>
+            <input
+              type="password"
+              value="admin"
+              placeholder="Nouveau mot de passe"
+              name="lastPwd"
+              id="lastPwd"
+              class="bg-slate-100 p-2"
+            />
+          </div>
+
+          <!-- Nouveau Password -->
+          <div class="username flex flex-col">
+            <label for="newPwd" class="font-bold">Nouvea Mot de passe</label>
+            <input
+              type="password"
+              placeholder="Nouveau mot de passe"
+              name="newPwd"
+              id="newPwd"
+              class="bg-slate-100 p-2"
+            />
+          </div>
+
+          <!-- Confirmation Nouveau Password -->
+          <div class="username flex flex-col">
+            <label for="newPwd2" class="font-bold">
+              Confirmer votre Nouveau Mot de passe
+            </label>
+            <input
+              type="password"
+              placeholder="Nouveau mot de passe"
+              name="newPwd2"
+              id="newPwd2"
+              class="bg-slate-100 p-2"
+            />
+          </div>
+
+          <!-- div checkboxes -->
+          <div class="mt-2">
+            <input type="checkbox" name="show" id="show" />
+            <label for="show">Afficher les mots de passe </label>
+          </div>
+
+          <div class="text-end">
+            <input
+              class="px-4 py-2 bg-blue-500 text-white mt-4 hover:bg-blue-800"
+              type="submit"
+              value="Enregistrer"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="../script/settings.js"></script>
+  </body>
+</html>

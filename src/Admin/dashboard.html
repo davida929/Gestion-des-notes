@@ -16,7 +16,33 @@
     </nav> -->
     <main class="min-h-screen w-full mb-16">
       <!-- Header -->
-      <div class="header p-4 px-8 bg-white border fixed w-full">Acceuil</div>
+      <div
+        class="header p-4 px-8 bg-white border fixed w-full flex justify-between items-center"
+      >
+        <!-- Navigation  -->
+        <ul class="Navigation flex gap-x-4 items-center">
+          <li>
+            <a href="dashboard.html" class="text-blue-500">Acceuil</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-blue-500">Contact</a>
+          </li>
+          <li>
+            <a href="parametre.html" class="hover:text-blue-500">Parametre</a>
+          </li>
+        </ul>
+
+        <!-- End Button -->
+        <div>
+          <span class="username">Bertho</span>
+          <a
+            href="../adminLogin.html"
+            class="ml-2 py-2 px-4 bg-slate-100 hover:bg-red-200"
+          >
+            Deconnexion
+          </a>
+        </div>
+      </div>
 
       <!-- List des professeurs -->
       <div class="mt-16 main flex px-8 py-4 gap-x-4">
@@ -236,7 +262,7 @@
 
     <!-- Pop up -->
     <div
-      class="pop-up-bg fixed inset-0 w-full h-full bg-black bg-opacity-50 grid place-items-center"
+      class="pop-up-bg fixed inset-0 w-full h-full bg-black bg-opacity-50 hidden place-items-center"
     >
       <!-- pop window -->
       <div class="bg-white p-5 py-4 min-w-80 relative">
