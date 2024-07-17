@@ -20,4 +20,4 @@ class Pop_up {
     this.set_display("none");
   };
 }
-test = new Pop_up(".pop-up-bg", ".add-btn", ".close-btn");
+test = new Pop_up(".bg-pop", ".open", ".close");
