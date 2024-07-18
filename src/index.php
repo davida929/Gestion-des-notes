@@ -1,3 +1,4 @@
 <?php 
-    require 'view/enseignant/home.view.php';
-?>
+    require 'helper.php';
+    require 'router.php';
+    

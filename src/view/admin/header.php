@@ -16,13 +16,13 @@
         <!-- Navigation  -->
         <ul class="Navigation flex gap-x-4 items-center">
           <li>
-            <a href="dashboard.html" class="hover:text-blue-500">Acceuil</a>
+            <a href="/admin/dashboard" class="hover:text-blue-500">Acceuil</a>
           </li>
           <li>
-            <a href="contact.html" class="text-blue-500">Contact</a>
+            <a href="/admin/contact" class="text-blue-500">Contact</a>
           </li>
           <li>
-            <a href="parametre.html" class="hover:text-blue-500">Parametre</a>
+            <a href="/admin/parametre" class="hover:text-blue-500">Parametre</a>
           </li>
         </ul>
 
@@ -30,7 +30,7 @@
         <div>
           <span class="username">Bertho</span>
           <a
-            href="../adminLogin.html"
+            href="/admin/login"
             class="ml-2 py-2 px-4 bg-slate-100 hover:bg-red-200"
           >
             Deconnexion

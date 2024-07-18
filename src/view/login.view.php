@@ -42,7 +42,7 @@
       </div>
       <div class="py-2 pt-4">
         Vous n'avez pas un compte ?
-        <a href="signup.html" class="text-xm text-green-500">
+        <a href="/signup" class="text-xm text-green-500">
           Créer un compte
         </a>
       </div>

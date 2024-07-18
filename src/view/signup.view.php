@@ -3,7 +3,7 @@
 ?>
 
   <body class="container bg-green-300 grid place-items-center min-h-screen">
-    <div class="bg-white p-5 py-6 min-w-80">
+    <div class="bg-white  p-5 py-1 min-w-80">
       <h1 class="text-xl text-green-500 text-center">Inscription</h1>
       <form action="#" method="post" enctype="multipart/form-data">
         <div class="block mt-6">
@@ -150,7 +150,7 @@
         </div>
         <div class="py-2 pt-4">
           Vous avez déjà un compte ?
-          <a href="login.html" class="text-xm text-green-500"> Se connecter </a>
+          <a href="/login" class="text-xm text-green-500"> Se connecter </a>
         </div>
       </form>
     </div>
