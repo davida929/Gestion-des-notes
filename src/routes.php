@@ -8,4 +8,8 @@ return [
     "/admin/contact" => "admin/contact", 
     "/admin/dashboard" => "admin/dashboard", 
     "/admin/parametre" => "admin/parametre", 
+    "/parametre" => "parametre", 
+    "/list" => "list", 
+    "/note" => "note", 
+    "/home" => "home" 
 ];
