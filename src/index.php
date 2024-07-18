@@ -9,5 +9,7 @@
   </head>
   <body>
     <h1 class="btn-primary">Hello world</h1>
+    <br>
+    <div class="text-2xl"></div>
   </body>
 </html>
