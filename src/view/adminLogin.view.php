@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Admin Login</title>
-  </head>
+<?php 
+  require_once 'partial/head.php';
+?>
   <body class="container bg-blue-300 grid place-items-center min-h-screen">
     <div class="bg-white p-5 py-6 min-w-80">
       <h1 class="text-xl text-blue-500 text-center">Espace Admin</h1>
@@ -46,4 +40,6 @@
       </form>
     </div>
   </body>
-</html>
+<?php 
+  require_once 'partial/footer.php';
+?>
