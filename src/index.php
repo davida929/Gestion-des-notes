@@ -1,3 +1,3 @@
 <?php 
-    require 'view/admin/contact.view.php';
+    require 'view/enseignant/list.view.php';
 ?>
