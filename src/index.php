@@ -1,3 +1,3 @@
 <?php 
-    require 'view/enseignant/list.view.php';
+    require 'view/enseignant/home.view.php';
 ?>

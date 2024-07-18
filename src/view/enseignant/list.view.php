@@ -1,7 +1,37 @@
 <?php
   require_once 'header.php';
  ?>
-    <div class="mt-14 bg-white" >
+          <!-- Liste des notes  -->
+
+      <!-- Introduction -->
+      <div class="p-4 bg-white mt-14">
+        <h1 class="text-2xl text-center font-bold mt-4">Groupe Genie G1</h1>
+        <!-- Operation -->
+        <div class="p-4 flex justify-start gap-x-2">
+          <!-- Exporter en PDF -->
+          <button
+            class="px-4 py-2 bg-red-400 rounded text-white flex justify-center items-center gap-x-2"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=39195&format=png&color=000000"
+              class="w-5"
+              alt="img"
+            />
+            Exporter en PDF
+          </button>
+
+          <!-- Exporter en PDF -->
+          <button
+            class="px-4 py-2 bg-green-400 rounded text-white flex justify-center items-center gap-x-2"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=BEMhRoRy403e&format=png&color=000000"
+              class="w-5"
+              alt="img"
+            />
+            Exporter en Excel
+          </button>
+        </div>
         <!-- Main -->
         <div class="flex justify-between p-4">
           <!-- Table -->
