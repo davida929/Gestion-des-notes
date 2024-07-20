@@ -17,6 +17,7 @@ function controllerToView($routes, $uri){
 
 function abort(){
     http_response_code(404);
+    loadView('404');
     die();
 }
 

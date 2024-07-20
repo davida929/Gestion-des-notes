@@ -1,4 +1,5 @@
 <?php 
+
   require_once 'header.php';
 ?>
       <!-- List des professeurs -->
@@ -379,6 +380,10 @@
         </form>
       </div>
     </div>
-    <script src="../script/pop_up.js"></script>
+    <script >
+    <?= 
+      file_get_contents('view/script/pop_up.js')
+    ?>
+    </script>
   </body>
 </html>
