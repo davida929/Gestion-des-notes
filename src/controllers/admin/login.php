@@ -1,8 +1,11 @@
 <?php
 session_start();
-if($_SESSION['admin_auth']){
-    header("Location:/admin/dashboard");
+if (isset($_SESSION['admin_auth'])) {
+    header("Location: /admin/dashboard");
+    exit();
 }
+
+$title = "Connexion" ;
 
 require 'Database/Database.php';
 require 'Models/Admin.php';
