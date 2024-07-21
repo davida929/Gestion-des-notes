@@ -69,7 +69,6 @@
                 placeholder="034 xx  xxxx xx"
                 name="Photo"
                 id="photo"
-                required
               />
             </div>
             <div class="flex flex-col">
@@ -145,6 +144,7 @@
           <input
             class="w-full text-white bg-green-500 py-2 hover:bg-green-600"
             type="submit"
+            name = 'ok'
             value="S'inscrire"
           />
         </div>

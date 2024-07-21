@@ -1,3 +1,5 @@
 <?php
 
-require_once 'view/enseignant/note.view.php';
+$title = "Genie Info G1";
+
+require_once 'view/enseignant/list.view.php';

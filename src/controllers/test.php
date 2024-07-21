@@ -1,11 +1,6 @@
 <?php
 
-require 'Database/Database.php';
+require 'Models/Teacher.php';
 
-
-$database = getDatabase();
-
-$rqt = $database->prepare("SELECT * FROM admin");
-$rqt->execute();
-
-var_dump($rqt->fetchAll());
+$d = new Enseignant();
+$d->create("A14", "davida", "Bertho","Homme", "2005-12-04", "0346422007", "berto3@gmail.com","davida");

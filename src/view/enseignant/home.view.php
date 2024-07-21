@@ -20,37 +20,37 @@
           <!-- List of  Card  -->
           <div class="main grid grid-cols-4 p-4 gap-y-2 gap-x-2">
             <!-- card 1 -->
-            <a href="list.html" class="px-4 py-2 bg-blue-200">
+            <a href="/list" class="px-4 py-2 bg-blue-200">
               <h3 class="text-lg font-bold">Genie Info GP 1</h3>
               <h6 class="">Nombre d'etudians : 123</h6>
             </a>
 
             <!-- card 1 -->
-            <a href="list.html" class="px-4 py-2 bg-pink-200">
+            <a href="/list" class="px-4 py-2 bg-pink-200">
               <h3 class="text-lg font-bold">Genie Info GP 1</h3>
               <h6 class="">Nombre d'etudians : 123</h6>
             </a>
 
             <!-- card 1 -->
-            <a href="list.html" class="px-4 py-2 bg-red-200">
+            <a href="/list" class="px-4 py-2 bg-red-200">
               <h3 class="text-lg font-bold">Genie Info GP 1</h3>
               <h6 class="">Nombre d'etudians : 123</h6>
             </a>
 
             <!-- card 1 -->
-            <a href="list.html" class="px-4 py-2 bg-yellow-200">
+            <a href="/list" class="px-4 py-2 bg-yellow-200">
               <h3 class="text-lg font-bold">Genie Info GP 1</h3>
               <h6 class="">Nombre d'etudians : 123</h6>
             </a>
 
             <!-- card 1 -->
-            <a href="list.html" class="px-4 py-2 bg-green-200">
+            <a href="/list" class="px-4 py-2 bg-green-200">
               <h3 class="text-lg font-bold">Genie Info GP 1</h3>
               <h6 class="">Nombre d'etudians : 123</h6>
             </a>
 
             <!-- card 1 -->
-            <a href="list.html" class="px-4 py-2 bg-red-200">
+            <a href="/list" class="px-4 py-2 bg-red-200">
               <h3 class="text-lg font-bold">Genie Info GP 1</h3>
               <h6 class="">Nombre d'etudians : 123</h6>
             </a>
@@ -63,7 +63,7 @@
 
     <!-- Pop up  -->
     <div
-      class="hidden bg-pop absolute bg-black bg-opacity-50 inset-0 h-full w-full grid place-items-center"
+      class="hidden bg-pop absolute bg-black bg-opacity-50 inset-0 h-full w-full  place-items-center"
     >
       <div class="pop-up bg-white p-4 rounded relative">
         <h2 class="text-xl font-bold text-center">Ajouter une Note</h2>
@@ -131,6 +131,8 @@
         </button>
       </div>
     </div>
-    <script src="../script/home.js"></script>
+    <script>
+      <?= file_get_contents('view/script/home.js') ?>
+    </script>
   </body>
 </html>
