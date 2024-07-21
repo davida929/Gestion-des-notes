@@ -13,6 +13,7 @@ return [
     "/list" => "list", 
     "/note" => "note", 
     "/home" => "home",
+    "/logout" => "logout",
     "/test" => "test"
 
 ];

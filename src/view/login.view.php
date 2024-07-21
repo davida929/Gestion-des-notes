@@ -4,9 +4,13 @@
 <body class="container bg-green-300 grid place-items-center min-h-screen">
   <div class="bg-white p-5 py-6 min-w-80">
     <h1 class="text-xl text-green-500 text-center">Connexion</h1>
+
+    <?php if($isError): ?>
     <div class="erreur p-3 text-red-800 bg-red-100 mt-6 rounded">
       Mot de passe ou Email incorrrects
     </div>
+    <?php endif; ?>
+
     <form action="#" method="post" class="pt-1">
       <div class="flex flex-col">
         <label for="email" class="font-bold pb-1">Email</label>
@@ -37,6 +41,7 @@
         <input
           class="w-full text-white bg-green-500 py-2 hover:bg-green-600"
           type="submit"
+          name ="ok"
           value="Se connecter"
         />
       </div>

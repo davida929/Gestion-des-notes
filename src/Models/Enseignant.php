@@ -26,10 +26,19 @@ class Enseignant {
     }
 
     // Lire un utilisateur par ID
-    public function read($mat) {
-        $sql = "SELECT * FROM enseignant WHERE mat = :mat";
+    public function read($matr) {
+        $sql = "SELECT * FROM enseignant WHERE matr = :matr";
         $stmt = $this->db->prepare($sql);
-        $stmt->bindParam(':mat', $mat);
+        $stmt->bindParam(':matr', $matr);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+        // Lire un utilisateur par ID
+    public function login($mail, $password) {
+        $sql = "SELECT matr FROM enseignant WHERE mail = :mail AND password = :password";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindParam(':mail', $mail);
+        $stmt->bindParam(':password', $password);
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
@@ -37,10 +46,10 @@ class Enseignant {
 
 
     // Supprimer un utilisateur par ID
-    public function delete($mat) {
-        $sql = "DELETE FROM enseignant WHERE mat = :mat";
+    public function delete($matr) {
+        $sql = "DELETE FROM enseignant WHERE matr = :matr";
         $stmt = $this->db->prepare($sql);
-        $stmt->bindParam(':mat', $mat);
+        $stmt->bindParam(':matr', $matr);
         return $stmt->execute();
     }
 
