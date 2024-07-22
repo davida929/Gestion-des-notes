@@ -33,7 +33,7 @@
           </button>
         </div>
         <!-- Main -->
-        <div class="flex justify-between p-4">
+        <div class="flex justify-between items-start p-4">
           <!-- Table -->
           <table class="w-full">
             <!-- Header -->
@@ -44,6 +44,7 @@
               <th class="text-start p-2 bg-green-100 border">Code Massar</th>
               <th class="text-start px-2 bg-green-100 border w-14">DS 1</th>
               <th class="text-start px-2 bg-green-100 border w-14">DS 2</th>
+              <th class="text-center px-2   w-14" colspan="2" >Action</th>
             </tr>
 
             <!-- Body -->
@@ -68,11 +69,48 @@
                   class="pl-2 bg-slate-100"
                 />
               </td>
+              <td class="p-2">
+                <a href="#" class="px-2 py-2 bg-blue-400 text-white">Modifier</a>
+              </td>
+              <td class="p-2">
+                <a href="#" class="px-2 py-2 bg-red-400 text-white">Supprimer</a>
+              </td>
             </tr>
           </table>
-
           <!-- Search Bar -->
           <div class="w-2/5 text-center sticky">
+            <!-- ajout d'etudiants -->
+            <div class="px-4 py-2">
+                <h2 class=" font-bold">Ajouter un Etudiant</h2>
+                <form action="/add" method="post">
+                  <table class="mt-2">
+                    <tr>
+                      <td class="w-full">Code Massar</td>
+                      <td> <input type="text" name="code_massar" class="bg-slate-100 px-2 py-1" > </td>
+                    </tr>
+                    <tr>
+                      <td class="w-full">Nom</td>
+                      <td> <input type="text" name="nom" class="bg-slate-100 px-2 py-1" > </td>
+                    </tr>
+                    <tr>
+                      <td class="w-full">Prénom</td>
+                      <td> <input type="text" name="prenom" class="bg-slate-100 px-2 py-1" > </td>
+                    </tr>
+                    <?php if (!empty($error)): ?>
+                    <tr>
+                      <td class="text-red-600 text-xs" colspan="2"><?= $error ?></td>
+                    </tr>
+                    <?php endif ; ?>
+
+                    <tr>
+                      <td colspan="2">
+                        <button type="submit" class="px-4 py-2 bg-green-400 text-white w-full">Enregistrer</button>
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+
+            </div>
             <h3 class="font-bold">Barre de Recherche</h3>
             <form action="#" class="flex mt-2 px-4 items-center" method="GET">
               <input

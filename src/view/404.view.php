@@ -1,4 +1,6 @@
 <?php
+
+$title = "404";
 require_once 'view/partial/head.php';
 ?>
 
