@@ -32,11 +32,10 @@ if(isset($_POST['ok'])){
     $note = $_POST['note'];
 
     if($etudiant->read($code_massar)){
-        var_dump("User already exits");
-        // update the user in the database ... 
+        $etudiant->update($code_massar, $nom, $prenom);
+        $notes->update($dev_id, $code_massar, $note);
     }
     else {
-        var_dump("User doesn't exists");
         $etudiant->create($code_massar, $nom, $prenom);
         $notes->create($dev_id, $code_massar, $note);
     }

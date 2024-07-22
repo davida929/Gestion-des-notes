@@ -18,6 +18,14 @@ class Note {
         $stmt->bindParam(':note', $note);
         return $stmt->execute();
     }
+    public function update($id_devoir, $id_etu , $note ) {
+        $sql = "UPDATE notes SET note = :note WHERE id_devoir = :id_devoir AND id_etu = :id_etu";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindParam(':id_devoir', $id_devoir);
+        $stmt->bindParam(':id_etu', $id_etu);
+        $stmt->bindParam(':note', $note);
+        return $stmt->execute();
+    }
 
     // // Lire un utilisateur par ID
     // public function read($code_massar) {
