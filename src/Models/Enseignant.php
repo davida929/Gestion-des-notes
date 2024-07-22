@@ -59,5 +59,19 @@ class Enseignant {
         $stmt = $this->db->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    // Lire tous les utilisateurs a partir de certaine rangs
+    public function fetch_between($debut, $fin) {
+        $sql = "SELECT * FROM enseignant LIMIT $fin OFFSET $debut ";
+        $stmt = $this->db->query($sql);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
+    public function count() {
+        $sql = "SELECT count(*) AS n FROM enseignant";
+        $stmt = $this->db->query($sql);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 }
 ?>

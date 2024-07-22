@@ -10,7 +10,7 @@
               src="https://img.icons8.com/?size=100&id=38HJBFwphJ3I&format=png&color=ffffff"
               alt="professeur"
             />
-            <h3 class="text-2xl font-bold">3000</h3>
+            <h3 class="text-2xl font-bold"> <?= $total_teacher ?> </h3>
             <h3 class="text">Professeur inscrits</h3>
           </div>
         </div>
@@ -99,88 +99,32 @@
           <!-- body -->
 
           <!-- ligne 1  -->
+          <?php  if(count($list_teacher) > 0):
+            
+            foreach($list_teacher as $teacher):
+            ?>
           <tr>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
+            <td class="border py-2 px-4"><?= $teacher['matr']?></td>
+            <td class="border py-2 px-4"><?= $teacher['nom']?></td>
+            <td class="border py-2 px-4"><?= $teacher['prenom']?></td>
+            <td class="border py-2 px-4"><?= $teacher['dateNaissance']?></td>
+            <td class="border py-2 px-4"><?= $teacher['tel']?></td>
+            <td class="border py-2 px-4"><?= $teacher['mail']?></td>
             <td class="py-2 px-1 text-center">
-              <button class="px-4 py-2 bg-blue-100 mr-2">
-                <img
-                  src="https://img.icons8.com/?size=100&id=49&format=png&color=000000"
-                  alt="modify-icon"
-                  class="w-4"
-                />
-              </button>
+              <a class="px-4 py-2 bg-blue-100 mr-2" href="/edit" >
+              Modifer
+              </a>
             </td>
             <td class="py-2 px-1">
-              <button class="px-4 py-2 bg-red-200">
-                <img
-                  src="https://img.icons8.com/?size=100&id=67884&format=png&color=000000"
-                  alt="delete-icon"
-                  class="w-4"
-                />
-              </button>
+              <a class="px-4 py-2 w-12 bg-red-200" href="/admin/delete?id=<?= $teacher['matr']?>" >
+                Supprimer
+              </a>
             </td>
           </tr>
-
-          <!-- Ligne 2  -->
-          <tr>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="py-2 px-1 text-center">
-              <button class="px-4 py-2 bg-blue-100 mr-2">
-                <img
-                  src="https://img.icons8.com/?size=100&id=49&format=png&color=000000"
-                  alt="modify-icon"
-                  class="w-4"
-                />
-              </button>
-            </td>
-            <td class="py-2 px-1">
-              <button class="px-4 py-2 bg-red-200">
-                <img
-                  src="https://img.icons8.com/?size=100&id=67884&format=png&color=000000"
-                  alt="delete-icon"
-                  class="w-4"
-                />
-              </button>
-            </td>
-          </tr>
-
-          <!-- Ligne 3 -->
-          <tr>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="border py-2 px-4">test</td>
-            <td class="py-2 px-1 text-center">
-              <button class="px-4 py-2 bg-blue-100 mr-2">
-                <img
-                  src="https://img.icons8.com/?size=100&id=49&format=png&color=000000"
-                  alt="modify-icon"
-                  class="w-4"
-                />
-              </button>
-            </td>
-            <td class="py-2 px-1">
-              <button class="px-4 py-2 bg-red-200">
-                <img
-                  src="https://img.icons8.com/?size=100&id=67884&format=png&color=000000"
-                  alt="delete-icon"
-                  class="w-4"
-                />
-              </button>
-            </td>
-          </tr>
+          <?php 
+            endforeach;
+            endif;
+          ?>
         </table>
 
         <!-- Pagination -->

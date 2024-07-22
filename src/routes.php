@@ -9,6 +9,7 @@ return [
     "/admin/dashboard" => "admin/dashboard", 
     "/admin/parametre" => "admin/parametre", 
     "/admin/logout" => "admin/logout", 
+    "/admin/delete" => "admin/delete", 
     "/parametre" => "parametre", 
     "/list" => "list", 
     "/note" => "note", 
