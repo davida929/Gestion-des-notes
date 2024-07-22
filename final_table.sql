@@ -32,5 +32,12 @@ create table if not exists notes (
 );
 
 show tables ;
-
+use notes; 
+select distinct niveu from devoir where matr_ens = 'C12';
 select * from enseignant ;
+select * from notes ;
+select * from devoir ;
+select * from etudiants ;
+select e.* , n.note from etudiants e join notes n on n.id_etu = e.code_massar  where n.id_devoir = 9;   
+
+delete from etudiants ;

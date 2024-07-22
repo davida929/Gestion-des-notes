@@ -75,7 +75,7 @@ class Devoir {
 
 
     public function count() {
-        $sql = "SELECT count(*) AS n FROM devoir";
+        $sql = "SELECT count(*) AS  n FROM devoir";
         $stmt = $this->db->query($sql);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }

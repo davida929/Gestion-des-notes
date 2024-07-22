@@ -34,7 +34,7 @@
             <!-- card 1 -->
                   <?php  foreach($devoirs[$key] AS $dev):?>
 
-              <a href="/list" class="px-4 py-2 bg-blue-200">
+              <a href="/list?dev_id=<?= $dev['id'] ?>&class=<?= $dev['classe'] ?>&titre=<?= $dev['titre'] ?>" class="px-4 py-2 bg-blue-200">
                 <h3 class="text-lg font-bold">  <?= $dev['classe'] ?> </h3>
                 <h6 class="">DS: <?= $dev['titre'] ?> </h6>
                 <h6 class="">Date : <?= $dev['dateNotes'] ?> </h6>

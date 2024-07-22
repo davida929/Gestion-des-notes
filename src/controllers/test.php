@@ -1,6 +1,8 @@
 <?php
 
-require 'Models/Teacher.php';
+require 'Models/Note.php';
 
-$d = new Enseignant();
-$d->create("A14", "davida", "Bertho","Homme", "2005-12-04", "0346422007", "berto3@gmail.com","davida");
+$e = new Note();
+
+$e->create(9,'FSO12',12);
+ var_dump($e->readAll());
